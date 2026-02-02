@@ -59,7 +59,7 @@ export default async function CareersPage() {
                 有竞争力的薪酬
               </h3>
               <p className="text-sm text-tertiary">
-                股权激励 + 绩效奖金
+                绩效奖金
               </p>
             </div>
 

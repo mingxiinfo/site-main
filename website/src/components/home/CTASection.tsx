@@ -42,7 +42,7 @@ const CTASection: React.FC = () => {
                 有竞争力的薪酬
               </div>
               <div className="text-xs text-tertiary">
-                股权激励
+                绩效奖金
               </div>
             </div>
             <div>

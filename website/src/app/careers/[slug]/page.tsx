@@ -186,7 +186,7 @@ export default async function PositionPage({ params }: PositionPageProps) {
                       <li className="flex items-start gap-2">
                         <span className="text-accent text-lg">✓</span>
                         <span className="text-sm text-secondary">
-                          创业公司早期成员，股权激励
+                          创业公司早期成员，绩效奖金
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
