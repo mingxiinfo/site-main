@@ -76,7 +76,7 @@ export default function VideoProjectsPage() {
       <section className="section">
         <div className="container">
           {projects.length === 0 ? (
-            <Card variant="glass" className="text-center">
+            <Card variant="glow" className="text-center">
               <p className="text-secondary text-lg">暂无视频项目</p>
             </Card>
           ) : (
@@ -154,12 +154,12 @@ export default function VideoProjectsPage() {
                       {/* 标签 */}
                       <div className="flex flex-wrap gap-2">
                         {project.tags.slice(0, 3).map((tag) => (
-                          <Tag key={tag} variant="secondary" size="sm">
+                          <Tag key={tag} variant="secondary">
                             {tag}
                           </Tag>
                         ))}
                         {project.tags.length > 3 && (
-                          <Tag variant="secondary" size="sm">
+                          <Tag variant="secondary">
                             +{project.tags.length - 3}
                           </Tag>
                         )}
