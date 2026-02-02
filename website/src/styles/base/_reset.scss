@@ -1,0 +1,197 @@
+// Cook-Hire Design System - CSS Reset
+// 现代化的CSS重置
+
+@use '../abstracts' as *;
+
+// ============================================
+// Box-sizing
+// ============================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// ============================================
+// HTML & Body
+// ============================================
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $font-sans;
+  font-size: $text-base;
+  line-height: $leading-normal;
+  color: $text-primary;
+  background: $bg-primary;
+}
+
+// ============================================
+// Typography
+// ============================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-bold;
+  line-height: $leading-tight;
+  color: $text-primary;
+}
+
+h1 {
+  font-size: $text-5xl;
+  @include respond-to(md) {
+    font-size: $text-6xl;
+  }
+}
+
+h2 {
+  font-size: $text-4xl;
+  @include respond-to(md) {
+    font-size: $text-5xl;
+  }
+}
+
+h3 {
+  font-size: $text-3xl;
+  @include respond-to(md) {
+    font-size: $text-4xl;
+  }
+}
+
+h4 {
+  font-size: $text-2xl;
+}
+
+h5 {
+  font-size: $text-xl;
+}
+
+h6 {
+  font-size: $text-lg;
+}
+
+p {
+  margin-bottom: $spacing-md;
+  color: $text-secondary;
+}
+
+// ============================================
+// Links
+// ============================================
+
+a {
+  color: $primary-400;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $primary-300;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary-500;
+    outline-offset: 2px;
+    border-radius: $radius-sm;
+  }
+}
+
+// ============================================
+// Lists
+// ============================================
+
+ul,
+ol {
+  list-style: none;
+}
+
+// ============================================
+// Images & Media
+// ============================================
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// ============================================
+// Forms
+// ============================================
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  &:focus-visible {
+    outline: 2px solid $primary-500;
+    outline-offset: 2px;
+  }
+}
+
+input,
+textarea {
+  &:focus {
+    outline: 2px solid $primary-500;
+    outline-offset: 2px;
+  }
+}
+
+// ============================================
+// Tables
+// ============================================
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// ============================================
+// 滚动条
+// ============================================
+
+* {
+  @include custom-scrollbar;
+}
+
+// ============================================
+// Selection
+// ============================================
+
+::selection {
+  background: rgba($primary-500, 0.3);
+  color: $text-primary;
+}
+
+// ============================================
+// Focus Visible
+// ============================================
+
+:focus:not(:focus-visible) {
+  outline: none;
+}

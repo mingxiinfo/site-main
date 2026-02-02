@@ -1,0 +1,140 @@
+// Cook-Hire Design System - Typography
+// 排版系统和文本工具类
+
+@use '../abstracts' as *;
+
+// ============================================
+// 字体导入
+// ============================================
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+// ============================================
+// 基础排版类
+// ============================================
+
+.text-gradient-primary {
+  @include gradient-text($gradient-primary);
+}
+
+.text-gradient-secondary {
+  @include gradient-text($gradient-secondary);
+}
+
+.text-gradient-accent {
+  @include gradient-text($gradient-accent);
+}
+
+.text-glow {
+  @include text-glow($primary-400, 0.6);
+}
+
+// ============================================
+// 字体大小工具类
+// ============================================
+
+.text-xs { font-size: $text-xs; }
+.text-sm { font-size: $text-sm; }
+.text-base { font-size: $text-base; }
+.text-lg { font-size: $text-lg; }
+.text-xl { font-size: $text-xl; }
+.text-2xl { font-size: $text-2xl; }
+.text-3xl { font-size: $text-3xl; }
+.text-4xl { font-size: $text-4xl; }
+.text-5xl { font-size: $text-5xl; }
+.text-6xl { font-size: $text-6xl; }
+.text-7xl { font-size: $text-7xl; }
+
+// ============================================
+// 字重工具类
+// ============================================
+
+.font-light { font-weight: $font-light; }
+.font-normal { font-weight: $font-normal; }
+.font-medium { font-weight: $font-medium; }
+.font-semibold { font-weight: $font-semibold; }
+.font-bold { font-weight: $font-bold; }
+
+// ============================================
+// 文本颜色工具类
+// ============================================
+
+.text-primary { color: $text-primary; }
+.text-secondary { color: $text-secondary; }
+.text-tertiary { color: $text-tertiary; }
+
+// ============================================
+// 行高工具类
+// ============================================
+
+.leading-tight { line-height: $leading-tight; }
+.leading-normal { line-height: $leading-normal; }
+.leading-relaxed { line-height: $leading-relaxed; }
+
+// ============================================
+// 文本截断工具类
+// ============================================
+
+.truncate {
+  @include truncate;
+}
+
+.line-clamp-2 {
+  @include line-clamp(2);
+}
+
+.line-clamp-3 {
+  @include line-clamp(3);
+}
+
+// ============================================
+// 特殊排版元素
+// ============================================
+
+.hero-title {
+  font-size: $text-5xl;
+  font-weight: $font-bold;
+  line-height: $leading-tight;
+  letter-spacing: -0.02em;
+
+  @include respond-to(md) {
+    font-size: $text-6xl;
+  }
+
+  @include respond-to(lg) {
+    font-size: $text-7xl;
+  }
+}
+
+.section-title {
+  font-size: $text-4xl;
+  font-weight: $font-bold;
+  line-height: $leading-tight;
+  margin-bottom: $spacing-xl;
+
+  @include respond-to(md) {
+    font-size: $text-5xl;
+  }
+}
+
+.card-title {
+  font-size: $text-2xl;
+  font-weight: $font-semibold;
+  line-height: $leading-tight;
+  margin-bottom: $spacing-md;
+}
+
+.body-large {
+  font-size: $text-lg;
+  line-height: $leading-relaxed;
+  color: $text-secondary;
+}
+
+.caption {
+  font-size: $text-sm;
+  color: $text-tertiary;
+}
+
+.mono {
+  font-family: $font-mono;
+}

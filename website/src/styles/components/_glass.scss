@@ -1,0 +1,294 @@
+// Cook-Hire Design System - Glassmorphism Components
+// 玻璃态效果组件样式
+
+@use '../abstracts' as *;
+
+// ============================================
+// 基础玻璃卡片
+// ============================================
+
+.glass-card {
+  @include glass-card;
+  padding: $spacing-xl;
+  transition: all $transition-base;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+  }
+
+  // 尺寸变体
+  &--sm {
+    padding: $spacing-md;
+  }
+
+  &--lg {
+    padding: $spacing-2xl;
+  }
+
+  // 发光变体
+  &--glow {
+    @include hover-glow($primary-500);
+  }
+
+  // 边框渐变变体
+  &--gradient-border {
+    @include gradient-border(2px, $gradient-primary);
+  }
+}
+
+// ============================================
+// 玻璃按钮
+// ============================================
+
+.glass-button {
+  @include reset-button;
+  @include glass-card(
+    $bg: rgba(255, 255, 255, 0.08),
+    $border: rgba(255, 255, 255, 0.15),
+    $blur: 8px,
+    $radius: $radius-lg
+  );
+  padding: $spacing-md $spacing-xl;
+  font-weight: $font-medium;
+  color: $text-primary;
+  cursor: pointer;
+  transition: all $transition-base;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+    @include glow($primary-500, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  // 主要按钮
+  &--primary {
+    background: rgba($primary-500, 0.2);
+    border-color: rgba($primary-400, 0.3);
+
+    &:hover {
+      background: rgba($primary-500, 0.3);
+      @include glow($primary-400, 0.6);
+    }
+  }
+
+  // 次要按钮
+  &--secondary {
+    background: rgba($secondary-500, 0.2);
+    border-color: rgba($secondary-400, 0.3);
+
+    &:hover {
+      background: rgba($secondary-500, 0.3);
+      @include glow($secondary-400, 0.6);
+    }
+  }
+
+  // Accent按钮
+  &--accent {
+    background: rgba($accent, 0.2);
+    border-color: rgba($accent, 0.3);
+    color: $gray-900;
+
+    &:hover {
+      background: rgba($accent, 0.3);
+      @include glow($accent, 0.6);
+    }
+  }
+
+  // 大尺寸
+  &--lg {
+    padding: $spacing-lg $spacing-2xl;
+    font-size: $text-lg;
+  }
+}
+
+// ============================================
+// 玻璃导航栏
+// ============================================
+
+.glass-nav {
+  @include glass-card(
+    $bg: rgba(10, 10, 15, 0.7),
+    $border: rgba(255, 255, 255, 0.1),
+    $blur: 12px,
+    $radius: $radius-xl
+  );
+  padding: $spacing-md $spacing-xl;
+  position: fixed;
+  top: $spacing-lg;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: $z-sticky;
+  max-width: 1200px;
+  width: calc(100% - #{$spacing-xl * 2});
+
+  @include respond-to(md) {
+    padding: $spacing-lg $spacing-2xl;
+  }
+}
+
+// ============================================
+// 玻璃输入框
+// ============================================
+
+.glass-input {
+  @include glass-card(
+    $bg: rgba(255, 255, 255, 0.05),
+    $border: rgba(255, 255, 255, 0.1),
+    $blur: 8px,
+    $radius: $radius-lg
+  );
+  padding: $spacing-md $spacing-lg;
+  width: 100%;
+  color: $text-primary;
+  transition: all $transition-base;
+
+  &::placeholder {
+    color: $text-tertiary;
+  }
+
+  &:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: $primary-400;
+    @include glow($primary-500, 0.3);
+  }
+
+  &:hover:not(:focus) {
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+// ============================================
+// 玻璃标签
+// ============================================
+
+.glass-tag {
+  @include glass-card(
+    $bg: rgba(255, 255, 255, 0.08),
+    $border: rgba(255, 255, 255, 0.12),
+    $blur: 6px,
+    $radius: $radius-full
+  );
+  display: inline-flex;
+  align-items: center;
+  padding: $spacing-xs $spacing-md;
+  font-size: $text-sm;
+  font-weight: $font-medium;
+  color: $text-secondary;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: $text-primary;
+  }
+
+  // 颜色变体
+  &--primary {
+    background: rgba($primary-500, 0.15);
+    border-color: rgba($primary-400, 0.25);
+    color: $primary-300;
+  }
+
+  &--secondary {
+    background: rgba($secondary-500, 0.15);
+    border-color: rgba($secondary-400, 0.25);
+    color: $secondary-300;
+  }
+
+  &--accent {
+    background: rgba($accent, 0.15);
+    border-color: rgba($accent, 0.25);
+    color: $accent;
+  }
+}
+
+// ============================================
+// 玻璃面板
+// ============================================
+
+.glass-panel {
+  @include glass-card(
+    $bg: rgba(255, 255, 255, 0.03),
+    $border: rgba(255, 255, 255, 0.08),
+    $blur: 16px,
+    $radius: $radius-2xl
+  );
+  padding: $spacing-2xl;
+
+  &--elevated {
+    @include card-elevation(3);
+  }
+}
+
+// ============================================
+// 玻璃模态框背景
+// ============================================
+
+.glass-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: $z-modal-backdrop;
+}
+
+// ============================================
+// Bento Grid玻璃卡片
+// ============================================
+
+.glass-bento {
+  @include glass-card;
+  padding: $spacing-2xl;
+  overflow: hidden;
+  position: relative;
+
+  // 渐变背景叠加
+  &::before {
+    content: '';
+    @include absolute-cover;
+    background: radial-gradient(
+      circle at top right,
+      rgba($primary-500, 0.1) 0%,
+      transparent 50%
+    );
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-8px);
+    @include glow($primary-500, 0.3);
+  }
+
+  // 大尺寸变体
+  &--large {
+    grid-column: span 2;
+    padding: $spacing-3xl;
+
+    @include respond-to(lg) {
+      grid-row: span 2;
+    }
+  }
+}
+
+// ============================================
+// 玻璃分隔线
+// ============================================
+
+.glass-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent
+  );
+  margin: $spacing-xl 0;
+}
