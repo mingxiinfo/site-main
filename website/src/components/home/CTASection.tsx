@@ -1,4 +1,4 @@
-// Cook-Hire Home - CTA Section
+// Mingxi-Info Home - CTA Section
 // 行动号召区域
 
 import React from 'react';
@@ -18,7 +18,7 @@ const CTASection: React.FC = () => {
 
           <p className="body-large max-w-2xl mx-auto mb-8">
             我们正在寻找热爱技术、富有创造力的小伙伴。
-            如果你想在AI领域施展才华，Cook-Hire是你的最佳选择。
+            如果你想在AI领域施展才华，Mingxi-Info是你的最佳选择。
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

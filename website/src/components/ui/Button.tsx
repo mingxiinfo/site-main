@@ -1,4 +1,4 @@
-// Cook-Hire UI - Button Component
+// Mingxi-Info UI - Button Component
 // 玻璃态按钮组件
 
 import React from 'react';

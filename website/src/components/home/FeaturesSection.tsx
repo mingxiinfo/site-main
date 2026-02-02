@@ -1,4 +1,4 @@
-// Cook-Hire Home - Features Section
+// Mingxi-Info Home - Features Section
 // 特性展示区域
 
 import React from 'react';
@@ -51,7 +51,7 @@ const FeaturesSection: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="section-title">
             <span className="text-gradient-primary">为什么选择</span>{' '}
-            <span className="text-primary">Cook-Hire</span>
+            <span className="text-primary">Mingxi-Info</span>
           </h2>
           <p className="body-large max-w-2xl mx-auto">
             我们结合前沿技术与实战经验，为客户提供最优质的AI解决方案

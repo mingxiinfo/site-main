@@ -1,4 +1,4 @@
-// Cook-Hire Design System - Main Entry Point
+// Mingxi-Info Design System - Main Entry Point
 // 统一导入所有样式模块
 
 // ============================================
@@ -16,6 +16,7 @@
 // 3. Components (组件样式)
 // ============================================
 @use 'components/glass';
+@use 'components/markdown';
 
 // ============================================
 // 4. Utilities (工具类)

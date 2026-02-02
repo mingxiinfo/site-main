@@ -1,4 +1,4 @@
-// Cook-Hire - Homepage
+// Mingxi-Info - Homepage
 // 企业官网首页
 
 import { HeroSection, FeaturesSection, CTASection } from '@/components/home';

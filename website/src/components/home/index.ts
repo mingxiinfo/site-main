@@ -1,4 +1,4 @@
-// Cook-Hire Home - Component Index
+// Mingxi-Info Home - Component Index
 // 统一导出所有首页组件
 
 export { default as HeroSection } from './HeroSection';

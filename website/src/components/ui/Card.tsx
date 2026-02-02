@@ -1,4 +1,4 @@
-// Cook-Hire UI - Card Component
+// Mingxi-Info UI - Card Component
 // 玻璃态卡片组件
 
 import React from 'react';

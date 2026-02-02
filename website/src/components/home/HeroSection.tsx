@@ -1,4 +1,4 @@
-// Cook-Hire Home - Hero Section
+// Mingxi-Info Home - Hero Section
 // 首页主视觉区域
 
 'use client';
@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
 
           {/* 副标题 */}
           <p className="body-large max-w-2xl mx-auto mb-8">
-            Cook-Hire 是一家专注于 AI Agent 技术的创新科技公司。
+            Mingxi-Info 是一家专注于 AI Agent 技术的创新科技公司。
             我们致力于将人工智能带入日常工作流，让每个人都能拥有自己的智能助手。
           </p>
 

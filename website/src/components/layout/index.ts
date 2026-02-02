@@ -1,4 +1,4 @@
-// Cook-Hire Layout - Component Index
+// Mingxi-Info Layout - Component Index
 // 统一导出所有布局组件
 
 export { default as Header } from './Header';

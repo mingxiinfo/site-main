@@ -1,4 +1,4 @@
-// Cook-Hire 3D - Hero Scene Component
+// Mingxi-Info 3D - Hero Scene Component
 // M→X→M字母液体变化 + 多形状粒子系统
 
 'use client';

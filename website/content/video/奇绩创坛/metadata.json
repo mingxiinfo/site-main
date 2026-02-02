@@ -1,0 +1,23 @@
+{
+  "name": "奇绩创坛",
+  "slug": "qiji-creation-camp",
+  "description": "奇绩创坛项目介绍视频",
+  "coverImage": "/images/projects/qiji-cover.jpg",
+  "status": "已完成",
+  "tags": ["创业加速器", "孵化器", "投资"],
+  "videos": [
+    {
+      "title": "奇绩创坛打字机效果演示",
+      "filename": "奇绩创坛typewriter.mp4",
+      "description": "展示奇绩创坛的打字机动画效果",
+      "duration": "30秒",
+      "thumbnail": "/images/projects/qiji-thumb.jpg"
+    }
+  ],
+  "links": {
+    "website": "https://www.miracleplus.com",
+    "github": ""
+  },
+  "createdAt": "2026-01-15",
+  "updatedAt": "2026-01-15"
+}

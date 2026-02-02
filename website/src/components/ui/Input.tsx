@@ -1,4 +1,4 @@
-// Cook-Hire UI - Input Component
+// Mingxi-Info UI - Input Component
 // 玻璃态输入框组件
 
 import React from 'react';

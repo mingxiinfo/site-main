@@ -1,4 +1,4 @@
-// Cook-Hire Layout - Footer Component
+// Mingxi-Info Layout - Footer Component
 // 页脚组件
 
 import React from 'react';
@@ -33,10 +33,10 @@ const Footer: React.FC = () => {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-cyan-500 flex-center font-bold text-white">
-                CH
+                MI
               </div>
               <span className="text-xl font-bold text-gradient-primary">
-                Cook-Hire
+                Mingxi-Info
               </span>
             </div>
             <p className="text-sm text-tertiary leading-relaxed">
@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
         <div className="glass-divider" />
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-tertiary">
-            © {currentYear} Cook-Hire. All rights reserved.
+            © {currentYear} Mingxi-Info. All rights reserved.
           </p>
           <div className="flex gap-4">
             <a

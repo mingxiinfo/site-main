@@ -1,4 +1,4 @@
-// Cook-Hire UI - Tag Component
+// Mingxi-Info UI - Tag Component
 // 玻璃态标签组件
 
 import React from 'react';
