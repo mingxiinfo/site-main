@@ -2,7 +2,7 @@
 
 ## 项目背景
 
-Cook-Hire正在开发车载Android应用沙盒管控系统，基于类似VirtualApp的虚拟化技术，实现三方应用的安全运行和全面管控。
+Mingxi-Info正在开发车载Android应用沙盒管控系统，基于类似VirtualApp的虚拟化技术，实现三方应用的安全运行和全面管控。
 
 **项目周期**：6个月（5个月开发 + 1个月适配交付）
 **工作地点**：杭州余杭区（主要），联调期短期出差上海
@@ -36,7 +36,7 @@ Cook-Hire正在开发车载Android应用沙盒管控系统，基于类似Virtual
 ## JD文档
 
 ### 岗位1：Android系统架构师
-**文档位置**：`details/positions/android-system-architect/details/jd.md`
+**文档位置**：[`details/positions/android-system-architect/details/jd.md`](/careers/android-system-architect/details/jd)
 
 **核心要求**：
 - 8年+ Android开发，3年+ Framework经验
@@ -47,7 +47,7 @@ Cook-Hire正在开发车载Android应用沙盒管控系统，基于类似Virtual
 **薪资待遇**：30-35K/月 + 绩效奖金
 
 ### 岗位2：Android高级开发工程师
-**文档位置**：`details/positions/android-senior-developer/details/jd.md`
+**文档位置**：[`details/positions/android-senior-developer/details/jd.md`](/careers/android-senior-developer/details/jd)
 
 **核心要求**：
 - 3-5年Android开发经验
@@ -244,7 +244,7 @@ Cook-Hire正在开发车载Android应用沙盒管控系统，基于类似Virtual
 "我们是AI Agent初创团队，正在打造车载应用沙盒系统（类VirtualApp）。寻找资深Android架构师，负责Framework层虚拟化引擎设计。高度技术自主权，完善的薪酬体系，与大厂精英团队共同攻克技术难题。"
 
 ### 私信话术（主动沟通）
-"您好，我是Cook-Hire的技术负责人。看到您在XX项目中有XX经验，非常匹配我们正在做的车载沙盒系统。这是一个有技术深度的项目，涉及Android Framework虚拟化、Binder Hook等底层技术。我们团队来自一线大厂，提供完善的薪酬体系和充分的技术自主权。有兴趣了解一下吗？"
+"您好，我是Mingxi-Info的技术负责人。看到您在XX项目中有XX经验，非常匹配我们正在做的车载沙盒系统。这是一个有技术深度的项目，涉及Android Framework虚拟化、Binder Hook等底层技术。我们团队来自一线大厂，提供完善的薪酬体系和充分的技术自主权。有兴趣了解一下吗？"
 
 ## 招聘素材
 
@@ -286,12 +286,12 @@ Cook-Hire正在开发车载Android应用沙盒管控系统，基于类似Virtual
 
 ## 相关文档
 
-- **岗位1 JD**：`details/positions/android-system-architect/details/jd.md`
-- **岗位1 技术要求**：`details/positions/android-system-architect/details/requirements.md`
-- **岗位1 面试流程**：`details/positions/android-system-architect/details/interview.md`
-- **岗位2 JD**：`details/positions/android-senior-developer/details/jd.md`
-- **岗位2 技术要求**：`details/positions/android-senior-developer/details/requirements.md`
-- **岗位2 面试流程**：`details/positions/android-senior-developer/details/interview.md`
+- **岗位1 JD**：[`details/positions/android-system-architect/details/jd.md`](/careers/android-system-architect/details/jd)
+- **岗位1 技术要求**：[`details/positions/android-system-architect/details/requirements.md`](/careers/android-system-architect/details/requirements)
+- **岗位1 面试流程**：[`details/positions/android-system-architect/details/interview.md`](/careers/android-system-architect/details/interview)
+- **岗位2 JD**：[`details/positions/android-senior-developer/details/jd.md`](/careers/android-senior-developer/details/jd)
+- **岗位2 技术要求**：[`details/positions/android-senior-developer/details/requirements.md`](/careers/android-senior-developer/details/requirements)
+- **岗位2 面试流程**：[`details/positions/android-senior-developer/details/interview.md`](/careers/android-senior-developer/details/interview)
 
 ---
 
