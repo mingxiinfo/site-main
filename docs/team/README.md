@@ -49,4 +49,4 @@
 
 ## 如何加入
 
-查看 [招聘职位](/positions)，或发送简历至 career@cook-hire.com
+查看 [招聘职位](/positions)，或发送简历至 contact@minsight-ai.com

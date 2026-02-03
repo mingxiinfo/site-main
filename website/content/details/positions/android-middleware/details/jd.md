@@ -50,6 +50,6 @@
 
 ---
 
-**投递方式**: 请将简历发送至 [career@cook-hire.com](mailto:career@cook-hire.com)
+**投递方式**: 请将简历发送至 [contact@minsight-ai.com](mailto:contact@minsight-ai.com)
 
 **联系人**: Qpjoy

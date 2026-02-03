@@ -152,7 +152,7 @@ Cook-Hire（人才烹饪坊）是一家专注于AI Agent领域的初创公司，
 
 ## 应聘方式
 
-请发送简历至：**career@cook-hire.com**
+请发送简历至：**contact@minsight-ai.com**
 
 邮件标题：**[Android高级工程师] + 姓名 + 工作年限**
 
