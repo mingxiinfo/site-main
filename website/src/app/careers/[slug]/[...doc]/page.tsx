@@ -22,30 +22,54 @@ interface DocPageProps {
 // 生成静态路径
 export async function generateStaticParams() {
   const positionsPath = path.join(process.cwd(), 'content/details/positions');
+  const hirePath = path.join(process.cwd(), 'content/details/hire');
 
-  if (!fs.existsSync(positionsPath)) {
-    return [];
-  }
-
-  const folders = fs.readdirSync(positionsPath, { withFileTypes: true });
   const paths: Array<{ slug: string; doc: string[] }> = [];
 
-  for (const folder of folders) {
-    if (!folder.isDirectory()) continue;
+  // 生成 positions 下的文档路径
+  if (fs.existsSync(positionsPath)) {
+    const folders = fs.readdirSync(positionsPath, { withFileTypes: true });
 
-    const detailsPath = path.join(positionsPath, folder.name, 'details');
-    if (fs.existsSync(detailsPath)) {
-      const files = fs.readdirSync(detailsPath);
-      files.forEach((file) => {
-        if (file.endsWith('.md')) {
-          const docName = file.replace(/\.md$/, '');
-          paths.push({
-            slug: folder.name,
-            doc: ['details', docName],
-          });
-        }
-      });
+    for (const folder of folders) {
+      if (!folder.isDirectory()) continue;
+
+      const detailsPath = path.join(positionsPath, folder.name, 'details');
+      if (fs.existsSync(detailsPath)) {
+        const files = fs.readdirSync(detailsPath);
+        files.forEach((file) => {
+          if (file.endsWith('.md')) {
+            const docName = file.replace(/\.md$/, '');
+            paths.push({
+              slug: folder.name,
+              doc: ['details', docName],
+            });
+          }
+        });
+      }
     }
+  }
+
+  // 生成 hire 目录下的文档路径（所有职位共享）
+  if (fs.existsSync(hirePath)) {
+    const hireFiles = fs.readdirSync(hirePath);
+    const slugs = fs.existsSync(positionsPath)
+      ? fs.readdirSync(positionsPath, { withFileTypes: true })
+          .filter(f => f.isDirectory())
+          .map(f => f.name)
+      : [];
+
+    hireFiles.forEach((file) => {
+      if (file.endsWith('.md')) {
+        const docName = file.replace(/\.md$/, '');
+        // 为每个职位生成 hire 文档路径
+        slugs.forEach((slug) => {
+          paths.push({
+            slug,
+            doc: ['hire', docName],
+          });
+        });
+      }
+    });
   }
 
   return paths;
@@ -53,12 +77,24 @@ export async function generateStaticParams() {
 
 // 获取文档内容
 async function getDocContent(slug: string, docPath: string[]) {
-  const filePath = path.join(
-    process.cwd(),
-    'content/details/positions',
-    slug,
-    ...docPath
-  ) + '.md';
+  let filePath: string;
+
+  // 如果路径以 'hire' 开头，从 content/details/hire 读取
+  if (docPath[0] === 'hire') {
+    filePath = path.join(
+      process.cwd(),
+      'content/details/hire',
+      docPath.slice(1).join('/')
+    ) + '.md';
+  } else {
+    // 否则从 positions/{slug} 读取
+    filePath = path.join(
+      process.cwd(),
+      'content/details/positions',
+      slug,
+      ...docPath
+    ) + '.md';
+  }
 
   if (!fs.existsSync(filePath)) {
     return null;
@@ -116,6 +152,8 @@ export default async function DocPage({ params }: DocPageProps) {
     jd: '职位描述',
     requirements: '技术要求',
     interview: '面试流程',
+    'android.platform.hire': '项目需求',
+    'android-hiring-plan': '招聘方案',
   };
   const docTypeName = docTypeMap[docType] || docType;
 

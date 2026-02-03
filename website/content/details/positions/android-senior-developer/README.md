@@ -34,5 +34,5 @@
 
 ## 快速链接
 
-- 项目需求：`details/hire/android.platform.hire.md`
-- 招聘方案：`details/hire/android-hiring-plan.md`
+- 项目需求：[android.platform.hire.md](/careers/android-senior-developer/hire/android.platform.hire)
+- 招聘方案：[android-hiring-plan.md](/careers/android-senior-developer/hire/android-hiring-plan)
